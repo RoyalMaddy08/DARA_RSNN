@@ -51,5 +51,39 @@ All stages matched bit-exactly.
 The current implementation verifies recurrent state updates
 using the same input vector across passes.
 
+
+
+ESN_Q6_10/
+│
+├── README.md
+│
+├── rtl/
+│   ├── esn_top.v
+│   ├── esn_neuron.v
+│   ├── reservoir_controller.v
+│   ├── address_generator.v
+│   ├── mac_accum_q6_10.v
+│   ├── mult_q6_10.v
+│   └── tanh_lut.v
+│
+├── memory/
+│   ├── win_bram.coe
+│   ├── w_bram.coe
+│   ├── bias.coe
+│   ├── input_bram.coe
+│   └── tanh.mem
+│
+├── testbench/
+│   └── tb_esn_top.v
+│
+├── python/
+│   ├── golden_model.py
+│   └── compare_results.py
+│
+├── verification/
+│   ├── golden.csv
+│   ├── vivado_esn_results.csv
+│   └── verification_report.txt
+└── 
 Multi-timestep sequence input addressing is the next development
 stage.
