@@ -1,0 +1,17 @@
+golden.csv rows: 200
+vivado_esn_results.csv rows: 200
+missing in vivado: 0
+extra in vivado (no golden counterpart): 0
+
+[mac     ] 200/200 match  -- ALL MATCH
+
+[bias    ] 200/200 match  -- ALL MATCH
+
+[sum     ] 200/200 match  -- ALL MATCH
+
+[tanh_in ] 200/200 match  -- ALL MATCH
+
+[tanh_out] 200/200 match  -- ALL MATCH
+
+============================================================
+All stages match bit-exactly across all 200 rows.
