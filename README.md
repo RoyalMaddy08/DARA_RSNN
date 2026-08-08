@@ -50,9 +50,13 @@ All stages matched bit-exactly.
 
 The current implementation verifies recurrent state updates
 using the same input vector across passes.
+Multi-timestep sequence input addressing is the next development
+stage.
 
 
+## Project Structure
 
+```
 ESN_Q6_10/
 │
 ├── README.md
@@ -80,10 +84,8 @@ ESN_Q6_10/
 │   ├── golden_model.py
 │   └── compare_results.py
 │
-├── verification/
-│   ├── golden.csv
-│   ├── vivado_esn_results.csv
-│   └── verification_report.txt
-└── 
-Multi-timestep sequence input addressing is the next development
-stage.
+└── verification/
+    ├── golden.csv
+    ├── vivado_esn_results.csv
+    └── verification_report.txt
+```
